@@ -5,6 +5,29 @@
 This Real Estate Management System is a backend API built using **Node.js**, **Express.js**, and **Firebase Firestore** for database management. It is designed to manage data related to **Developers**, **Projects**, **Towers**, and **Series** in a real estate ecosystem. The system provides a well-structured set of CRUD (Create, Read, Update, Delete) operations for each module while ensuring proper validation, error handling, and data consistency across related entities.
 
 The project adheres to the **MVC architecture**, which separates concerns between models, views (though not applicable for this API), and controllers.
+```
+|-- project-root/
+    |-- controllers/
+        |-- developerController.js
+        |-- projectController.js
+        |-- towerController.js
+        |-- seriesController.js
+    |-- models/
+        |-- developerModel.js
+        |-- projectModel.js
+        |-- towerModel.js
+        |-- seriesModel.js
+    |-- routes/
+        |-- developerRoutes.js
+        |-- projectRoutes.js
+        |-- towerRoutes.js
+        |-- seriesRoutes.js
+    |-- config/
+        |-- firebase.js
+    |-- app.js
+    |-- package.json
+    |-- serviceAccountKey.json
+```
 
 ### **Technologies Used**
 - **Node.js**: JavaScript runtime environment.
