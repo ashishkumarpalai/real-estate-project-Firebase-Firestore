@@ -23,7 +23,7 @@ exports.getSeries = async (req, res) => {
     try {
         const seriesId = req.params.id;
         const series = await getSeries(seriesId);
-        res.status(200).json({ series });
+        res.status(200).json(series);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
